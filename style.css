@@ -11,6 +11,34 @@
   display: none;
 }
 
+
+@font-face {
+  font-family: 'JosefinSansSemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('JosefinSansSemiBold'), url('./fonts/Josefin-Sans-Regular/JosefinSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JosefinSansLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('JosefinSansLight'), url('./fonts/Josefin-Sans-Regular/JosefinSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BloomingElegantSansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('BloomingElegantSansBold'), url('./fonts/BloomingElegantSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'koblenzSerialMediumRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('koblenzSerialMediumRegular'), url('./fonts/koblenz-serial-medium-regular.ttf') format('truetype');
+}
+
+
+
 /* LAYOUT */
 .layout-wrapper {
   width: 100vw;
@@ -22,7 +50,8 @@
 
   background-color: #080B1C;
 
-  font-family: "Poppins", sans-serif;
+  font-family: 'JosefinSansLight', sans-serif;
+  
   perspective: 1000px;
   -webkit-perspective: 1000px;
 }
@@ -107,6 +136,8 @@
 
   display: flex;
   justify-content: center;
+  
+  font-family: 'BloomingElegantSansBold', "Poppins", sans-serif;
 }
 .nav {
   width: 100%;
@@ -173,7 +204,9 @@
 .title {
   width: fit-content;
 
+  font-family: 'koblenzSerialMediumRegular', "Poppins", sans-serif;
   font-weight: bold;
+  letter-spacing: 0.1em;
 
   position: relative;
 }
@@ -211,6 +244,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  line-height: 1.7em;
 
   z-index: 2;
 }
@@ -271,6 +306,7 @@
 
   font-style: italic;
   font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
 }
 .location-cont .row {
   display: grid;
@@ -393,6 +429,7 @@
   width: fit-content;
 
   font-weight: 500;
+  font-family: 'JosefinSansSemiBold', "Poppins", sans-serif;
   
   position: relative;
 }
@@ -447,7 +484,8 @@
 
   align-items: center;
 
-  color: #6F7E91;
+  /* color: #6F7E91; */
+  color: rgba(255,255,255,0.5);
 }
 .tile > .name {
   font-weight: 500;
@@ -497,7 +535,8 @@
   font-weight: bold;
 }
 .tile > .info .ln_2 {
-  color: #6F7E91;
+  /* color: #6F7E91; */
+  color: rgba(255,255,255,0.5);
 }
 
 /* Video Component */
@@ -519,7 +558,7 @@
   left: 0;
 }
 .video-comp .wtv {  
-  font-weight: 500;
+  font-weight: 600;
 }
 
 
@@ -721,7 +760,7 @@
     padding: 14px 28px;
     border-radius: 23px;
 
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 15px;
   }
   .button > span { margin-right: 25px; }
@@ -986,7 +1025,7 @@
     margin-right: 20px;
   }
   .video-comp .wtv {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     
     font-size: 25px;
     line-height: 29px;
@@ -1138,7 +1177,7 @@
     padding: 14px 23px;
     border-radius: 23px;
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
   .button > span { margin-right: 20px; }
@@ -1562,7 +1601,7 @@
     padding: 35px 50px 83px;
     
     font-size: 11px;
-    line-height: 13px;
+    /* line-height: 13px; */
   }
 
   .tracker-wrapper,
@@ -1601,8 +1640,8 @@
   .heading {
     padding-bottom: 3px;
 
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .heading::after {
     width: 15px;
@@ -1651,9 +1690,14 @@
     grid-gap: 5px;
     margin: 11px 0 0;
 
+    justify-content: end;
+
     font-size: 10px;
     line-height: 12px;
     text-align: right;
+  }
+  .tile > img {
+    height: 18px
   }
 
 
@@ -1732,7 +1776,7 @@
     padding: calc(600px - 10vw) 0 0;
   }
 }
-@media only screen and (min-width: 300px) and (max-width: 360px) {
+@media only screen and (min-width: 0px) and (max-width: 360px) {
   .tracker-wrapper,
   .map-wrapper {
     padding: calc(300px + 100vw) 0 0;
@@ -1765,6 +1809,7 @@
     font-size: 11px;
     line-height: 13px;
   }
+  .nav.destination { padding-left: 10px; }
   .logo {
     font-size: 11px;
     line-height: 13px;
@@ -1788,7 +1833,7 @@
     width: 100px;
     padding-top: 10px;
     
-    font-size: 9px;
+    font-size: 10px;
     line-height: 16px;
     letter-spacing: normal;
   }
@@ -1801,10 +1846,10 @@
   .nav.login > .tab-cont::after { left: 300px; }
 
   .title {
-    padding-left: 38px;
+    padding-left: 5vw; /* 38px; */
     
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .stamp-cont {    
     top: -20px;
@@ -1917,6 +1962,9 @@
     font-size: 11px;
     line-height: 13px;
   }
+  .tile > img {
+    height: 14px
+  }
   .tile > .name {
     font-size: 12px;
     line-height: 14px;
@@ -1992,7 +2040,8 @@
     align-items: flex-start;
   }
   .footer .logo {
-    padding: 10px 0 20px;
+    width: 100%;
+    padding: 15px 0 30px;
   }
   .footer .tab-cont {
     width: 100%;
