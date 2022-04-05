@@ -148,6 +148,7 @@
   justify-content: space-between;
   
   font-weight: bold;
+  line-height: 1.2em;
 }
 
 .logo {
@@ -157,7 +158,12 @@
   align-items: center;
 
   font-weight: bold;
+  /* line-height: 1.2em; */
 }
+/* .logo > span {
+  height: 1em;
+} */
+.logo > img { margin-top: 0.5em; }
 
 .tab-cont {
   height: 100%;
@@ -626,12 +632,12 @@
   .nav {
     padding: 0 0 0 60px;
 
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 35px;/* 15px;
+    line-height: 18px; */
   }
   .logo {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 35px;
+    /* line-height: 21px; */
   }
   .logo > img {
     height: 40px;
@@ -649,7 +655,7 @@
     width: 180px;
     padding-top: 22px;
     
-    font-size: 16px;
+    font-size: 20px;
     line-height: 31px;
   }
   .header .tab-cont::after {
@@ -1054,12 +1060,12 @@
   .nav {
     padding: 0 0 0 50px;
 
-    font-size: 12.5px;
-    line-height: 15px;
+    font-size: 25px;
+    /* line-height: 15px; */
   }
   .logo {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 25px;
+    /* line-height: 18px; */
   }
   .logo > img {
     height: 34px;
@@ -1077,7 +1083,7 @@
     width: 160px;
     padding-top: 15px;
     
-    font-size: 13.3333px;
+    font-size: 20px;
     line-height: 26px;
   }
   .header .tab-cont::after {
@@ -1284,12 +1290,12 @@
   .nav {
     padding: 0 0 0 40px;
 
-    font-size: 12.5px;
-    line-height: 15px;
+    font-size: 20px;
+    /* line-height: 15px; */
   }
   .logo {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 20px;
+    /* line-height: 18px; */
   }
   .logo > img {
     height: 34px;
@@ -1307,7 +1313,7 @@
     width: 160px;
     padding-top: 15px;
     
-    font-size: 13.3333px;
+    font-size: 15px;
     line-height: 26px;
   }
   .header .tab-cont::after {
@@ -1533,12 +1539,12 @@
   .nav {
     padding: 0 0 0 25px;
 
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 15px;
+    /* line-height: 13px; */
   }
   .logo {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 15px;
+    /* line-height: 13px; */
   }
   .logo > img {
     height: 26px;
@@ -1558,7 +1564,7 @@
     width: 100px;
     padding-top: 10px;
     
-    font-size: 9px;
+    font-size: 11px;
     line-height: 16px;
     letter-spacing: normal;
   }
@@ -1806,13 +1812,13 @@
   .nav {
     padding: 0 0 6px 25px;
 
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 15px;
+    /* line-height: 13px; */
   }
   .nav.destination { padding-left: 10px; }
   .logo {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 15px;
+    /* line-height: 13px; */
   }
   .logo > img {
     height: 25px;
@@ -1833,7 +1839,7 @@
     width: 100px;
     padding-top: 10px;
     
-    font-size: 10px;
+    font-size: 13px;
     line-height: 16px;
     letter-spacing: normal;
   }
