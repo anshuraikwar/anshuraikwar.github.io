@@ -66,3 +66,14 @@ container?.addEventListener('mouseleave', (e) => {
     // shadow.style.boxShadow = `inset -100px 100px 150px 50px #080B1C, inset 50px -50px 150px 100px #080B1C, inset 250px -50px 200px 100px rgba(8, 11, 28, 0.75), inset -170px 30px 150px 250px rgba(8, 11, 28, 0.75)`;
   }, 100)
 })
+
+var menuOpen = false
+const nav = document.querySelector(`.nav.destination`);
+const line_1 = document.querySelector(`.line_1`);
+const line_2 = document.querySelector(`.line_2`);
+const line_3 = document.querySelector(`.line_3`);
+
+toggleMenu = () => {
+  menuOpen = !menuOpen
+  nav.classList.toggle("open")
+}
