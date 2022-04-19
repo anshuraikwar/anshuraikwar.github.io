@@ -11,6 +11,10 @@
   display: none;
 }
 
+body {
+  background-color: #080B1C;
+
+}
 
 @font-face {
   font-family: 'JosefinSansSemiBold';
