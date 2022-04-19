@@ -52,6 +52,7 @@
 
   font-family: 'JosefinSansLight', sans-serif;
   
+  overflow-x: hidden;
   perspective: 1000px;
   -webkit-perspective: 1000px;
 }
@@ -319,6 +320,8 @@
 }
 .map-cnt1 {
   position: relative;
+
+  /* overflow: hidden; */
 }
 .map-cnt2 {
   position: absolute;
@@ -371,6 +374,18 @@
   display: flex;
 }
 
+.reset-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  background-color: rgba(8, 11, 28, 0.5);
+  display: none;
+
+  z-index: 2;
+}
+
 .grid,
 .card {
   height: 100%;
@@ -420,7 +435,7 @@
 #icon_2,
 #icon_3 {
   z-index: 1;
-  transform: translateZ(0);
+  transform: translateZ(1px);
   transition: all 0.5s ease;
 }
 #shadow {
@@ -1555,8 +1570,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .tracker {
+  /* .tracker {
     display: none;
+  } */
+  
+  .reset-icon {
+    display: flex;
   }
 }
 
@@ -1683,6 +1702,10 @@
   }
 
 
+  .reset-icon {
+    bottom: 14vw;
+    left: 9vw; 
+  }
 
 
   .content {
@@ -1979,6 +2002,12 @@
   }
   .location-cont .row img {
     height: 12px;
+  }
+
+  
+  .reset-icon {
+    top: 14px;
+    right: 20px;
   }
 
   .content {
