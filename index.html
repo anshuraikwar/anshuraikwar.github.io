@@ -35,10 +35,10 @@
                                 </div>
                             </div>
                             <div class="tab-cont">
-                                <div class="tab"><div class="tab-title">DESTINATION</div></div>
-                                <div class="tab"><div class="tab-title">BOOK</div></div>
-                                <div class="tab"><div class="tab-title">CONTACT</div></div>
-                                <div class="tab"><div class="tab-title">LOGIN</div></div>
+                                <div class="tab"><div class="tab-title" onclick="switchTab('destination')">DESTINATION</div></div>
+                                <div class="tab"><div class="tab-title" onclick="switchTab('book')">BOOK</div></div>
+                                <div class="tab"><div class="tab-title" onclick="switchTab('contact')">CONTACT</div></div>
+                                <div class="tab"><div class="tab-title" onclick="switchTab('login')">LOGIN</div></div>
                             </div>
                         </div>
                     </div>
@@ -630,26 +630,26 @@
                             <div class="tab-cont">
                                 <div class="tab">
                                     <div class="tab-title">
-                                        DESTINATION
+                                        <span onclick="switchTab('destination')"> DESTINATION </span>
                                         <div class="tab-text">
-                                            North America <br/>
-                                            South America <br/>
-                                            Europe <br/>
-                                            Asia
+                                            <span onclick="switchTab('destination')"> America </span><br/>
+                                            <span onclick="switchTab('destination')"> South America </span><br/>
+                                            <span onclick="switchTab('destination')"> Europe </span><br/>
+                                            <span onclick="switchTab('destination')"> Asia </span> 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab">
                                     <div class="tab-title">
-                                        BOOK
+                                        <span onclick="switchTab('book')"> BOOK </span>
                                         <div class="tab-text">
-                                            Find a guide <br/>
-                                            Book a trip
+                                            <span onclick="switchTab('book')"> Find a guide </span><br/>
+                                            <span onclick="switchTab('book')"> Book a trip </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab"><div class="tab-title">CONTACT</div></div>
-                                <div class="tab"><div class="tab-title">LOGIN</div></div>
+                                <div class="tab"><div class="tab-title" onclick="switchTab('contact')">CONTACT</div></div>
+                                <div class="tab"><div class="tab-title" onclick="switchTab('login')">LOGIN</div></div>
                             </div>
                         </div>
                     </div>

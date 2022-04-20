@@ -85,3 +85,12 @@ toggleMenu = () => {
   menuOpen = !menuOpen
   nav.classList.toggle("open")
 }
+
+var tab = "destination"
+switchTab = (new_tab) => {
+  if(new_tab != tab) {
+    nav.classList.remove(tab)
+    nav.classList.add(new_tab)
+    tab = new_tab
+  }
+}

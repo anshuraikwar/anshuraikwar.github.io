@@ -226,16 +226,14 @@ body {
   position: relative;
 }
 .tab {
-
   display: flex;
   justify-content: center;
-
-  cursor: pointer;
 }
 .tab-title {
   width: fit-content;
   text-align: center;
 
+  cursor: pointer;
   position: relative;
 }
 .tab-text {
@@ -245,12 +243,17 @@ body {
   text-align: left;
 
   color: rgba(255, 255, 255, 0.75);
+  cursor: default;
+}
+.tab-text span {
+  cursor: pointer;
 }
 .header .tab-cont::after {
   content: '';
-  border-bottom: 5px solid rgba(204, 218, 240, 0.75);
+  border-bottom: 4px solid rgba(204, 218, 240, 0.75);
 
   position: absolute;
+  transition: all 0.3s ease;
 }
 .nav.destination > .tab-cont::after { left: 0; }
 /* .nav.book > .tab-cont::after { left: 180px; }
