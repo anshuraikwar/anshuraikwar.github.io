@@ -75,14 +75,14 @@ animateOut = (e) => {
   }, 100)
 }
 
-var menuOpen = false
+// var menuOpen = false
 const nav = document.querySelector(`.nav.destination`);
 const line_1 = document.querySelector(`.line_1`);
 const line_2 = document.querySelector(`.line_2`);
 const line_3 = document.querySelector(`.line_3`);
 
 toggleMenu = () => {
-  menuOpen = !menuOpen
+  // menuOpen = !menuOpen
   nav.classList.toggle("open")
 }
 
@@ -93,4 +93,9 @@ switchTab = (new_tab) => {
     nav.classList.add(new_tab)
     tab = new_tab
   }
+}
+
+const creditsWrapper = document.querySelector(`.credits-wrapper`);
+toggleCredits = () => {
+  creditsWrapper.classList.toggle("open")
 }
