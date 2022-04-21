@@ -55,7 +55,6 @@ container?.addEventListener('mouseleave', (e) => {
 })
 animateOut = (e) => {
   e.stopPropagation();
-  console.log('clicked')
 
   card.style.transform = `rotateX(0deg) rotateZ(0deg) translateZ(0px)`;
 
