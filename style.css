@@ -784,6 +784,9 @@ a {
   color: #FFFFFF;
   text-underline-offset: 2px;
 }
+.credits a {
+  margin: 0 10px;
+}
 
 .tooltip {
   position: relative;
