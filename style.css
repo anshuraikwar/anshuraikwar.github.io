@@ -774,7 +774,7 @@ body *:not(.title) {
   height: 15px;
   width: auto;
 }
-.credits span {display: flex; }
+.credits span { word-spacing: 0.5em; /* display: flex; */ }
 .credits span img {
   height: 13px;
   width: auto;
@@ -784,9 +784,9 @@ a {
   color: #FFFFFF;
   text-underline-offset: 2px;
 }
-.credits a {
+/* .credits a {
   margin: 0 10px;
-}
+} */
 
 .tooltip {
   position: relative;
