@@ -5,4 +5,4 @@
 :HL["/_next/static/media/Europa%20Grotesk%20SH%20Semi%20Bold-s.p.11ioduz_wtcn6.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 :HL["/_next/static/media/Urbanist%20Variable%20Font%20wght-s.p.00a.qru3r43aw.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 :HL["/_next/static/chunks/0f44y3cft.t89.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"Cbv2R2RkeuIraoA1kMJ4-"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"uTs88EI-QcNpeHNXc23VB"}
