@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:regular,bold|Lora:regular,bold');
+:root {
+    --font_heebo: "Heebo";
+    --font_lora: "Lora";
+
+    /* color codes */
+    --elevation_16: rgb(20, 31, 31);
+    --elevation_15: rgb(21, 28, 30);
+    --elevation_14: rgb(31, 43, 46);
+    --elevation_13: rgb(37, 51, 55);
+    --elevation_12: rgb(41, 58, 61);
+    --elevation_11: rgb(51, 73, 77);
+    --elevation_10: rgb(61, 87, 92);
+    --elevation_9: rgb(82, 116, 122);
+    --elevation_8: rgb(133, 167, 173);
+    --elevation_7: rgb(163, 189, 194);
+    --elevation_6: rgb(198, 206, 210);
+    --elevation_5: rgb(213, 219, 221);
+    --elevation_4: rgb(226, 230, 233);
+    --elevation_3: rgb(232, 235, 237);
+    --elevation_2: rgb(240, 243, 244);
+    --elevation_1: rgb(255, 255, 255);
+}
+
+scroll-transform-exploration {
+    margin: 0;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: var(--font_heebo), serif;
+}

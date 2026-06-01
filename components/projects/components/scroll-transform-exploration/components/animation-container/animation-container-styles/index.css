@@ -1,0 +1,99 @@
+:root {
+    --animated-container-height: 125vw;
+    /* min(649px, 95vh); */
+    --animated-container-width: calc(var(--animated-container-height) * 0.9);
+
+    --romento-hello-word-hulu-tv-width: calc(var(--animated-container-width) * 0.512);
+
+    --tablet-padding-x: 8px;
+    --tablet-padding-y: 9px;
+}
+
+@media (min-width: 640px) {
+    :root {
+        --animated-container-height: 95vw;
+        --animated-container-width: calc(var(--animated-container-height) * 0.9);
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --animated-container-height: min(649px, 95vh);
+        --animated-container-width: calc(var(--animated-container-height) * 0.9);
+    }
+}
+
+.animation_container {
+    height: var(--animated-container-height);
+    width: var(--animated-container-width);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: perspective(1200px) scale(0.85);
+}
+
+.hello_world,
+.romento,
+.hulu_tv {
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+    height: var(--animated-container-height);
+    width: var(--romento-hello-word-hulu-tv-width);
+
+    transform: perspective(1200px) translate(50%, 0%);
+}
+
+.romento,
+.hulu_tv {
+    opacity: 0;
+}
+
+.laptopWrapper,
+.laptop,
+.tablet {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+
+    height: var(--animated-container-height);
+    width: var(--animated-container-width);
+
+    opacity: 0;
+    overflow: visible;
+    z-index: 4;
+}
+
+.hello_world_level,
+.romento_level {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 809px) {
+
+    .hello_world,
+    .romento,
+    .hulu_tv,
+    .laptop {
+        top: 24px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .hello_world_level,
+    .romento_level {
+        border-radius: 24px;
+    }
+}

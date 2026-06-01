@@ -1,0 +1,186 @@
+:root {
+  --roll-height: max(275px, min(300px, 30vh));
+  --roll-width: calc(var(--roll-height) * 0.66);
+
+  --roll-edge-scale: 0.2;
+
+  --animation-duration: 2s;
+  --rolling-animation-duration: calc(var(--animation-duration) / 2);
+  --animation-timing-function: linear;
+  /* linear */
+  --animation-iteration-count: infinite;
+}
+
+.roller-positioning-container {
+  position: absolute;
+
+  height: var(--roll-height);
+  width: var(--roll-width);
+
+  font-family: var(--font-damage-plan);
+  overflow: visible;
+}
+
+.rolled-out-tape {
+  height: var(--roll-height);
+  width: fit-content;
+  padding: 20px 0;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.rolled-out-tape.white {
+  border: 3px solid black;
+
+  background-color: white;
+}
+
+.rolled-out-tape.black {
+  border: 3px solid white;
+
+  background-color: black;
+}
+
+.rolled-out-content-with-bg {
+  height: 100%;
+  width: var(--roll-width);
+  /* 200px; */
+
+  background-size: var(--roll-width) 100%;
+
+  transition: width var(--animation-duration) linear;
+  overflow: hidden;
+}
+
+.rolled-out-tape.white .rolled-out-content-with-bg {
+  background-image: url('/assets/rollout/img/tape-tile-white.webp');
+  background-size: var(--roll-width) 100%;
+}
+
+.rolled-out-tape.black .rolled-out-content-with-bg {
+  background-image: url('/assets/rollout/img/tape-tile-black.webp');
+  background-size: var(--roll-width) 100%;
+}
+
+.roll-poisitoned-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translate(50%, -50%);
+}
+
+.roll {
+  width: var(--roll-width);
+  height: var(--roll-height);
+
+  border-width: 0 3px;
+  border-style: solid;
+
+  position: relative;
+}
+
+.rolled-out-tape.black .roll {
+  border-color: black;
+
+  background-color: white;
+}
+
+.rolled-out-tape.white .roll {
+  border-color: white;
+
+  background-color: black;
+}
+
+.roll-edges {
+  position: absolute;
+  left: -3px;
+  right: -3px;
+
+  z-index: 2;
+}
+
+.roll-edges>img {
+  width: 100%;
+  height: auto;
+}
+
+.top-edge {
+  top: -9%;
+}
+
+.bottom-edge {
+  bottom: -9%;
+
+  transform: rotateX(180deg);
+}
+
+.roll-content {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.roll-text-position-cont {
+  position: absolute;
+  top: 50%;
+
+  animation: animate-rolling-position var(--rolling-animation-duration) var(--animation-timing-function);
+  animation-iteration-count: var(--animation-iteration-count);
+  transform: translateX(0px);
+}
+
+.roll-text-char-cont {
+  position: relative;
+}
+
+.roll-text-char {
+  position: absolute;
+  top: 50%;
+
+  font-size: min(55px, 11vh);
+  animation: animate-rolling-spinning var(--rolling-animation-duration) var(--animation-timing-function);
+  animation-iteration-count: var(--animation-iteration-count);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg);
+}
+
+.roll-text-char>div {
+  transform: rotateZ(90deg);
+}
+
+.rolled-out-tape.black .roll-text-char {
+  color: black;
+}
+
+.rolled-out-tape.white .roll-text-char {
+  color: white;
+}
+
+@keyframes animate-rolling-position {
+  0% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(calc(var(--roll-width) / 2));
+  }
+
+  100% {
+    transform: translateX(calc(var(--roll-width) + 3px));
+  }
+}
+
+@keyframes animate-rolling-spinning {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotateY(-90deg) scale(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotateY(90deg) scale(1);
+  }
+}

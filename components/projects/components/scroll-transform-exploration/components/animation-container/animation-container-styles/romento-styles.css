@@ -1,0 +1,93 @@
+/* romento */
+.romento_level.l_0 {
+    background-color: var(--elevation_16);
+
+    opacity: 1;
+    transform: perspective(1200px) translateX(64px) rotateY(90deg);
+    z-index: 0;
+}
+
+.romento_level.l_1 {
+    opacity: 1;
+    transform: perspective(1200px) translateX(32px) rotateY(90deg);
+    z-index: 1;
+}
+
+.romento_video_cont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    opacity: 0.2;
+}
+
+.romento_video {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    background-color: transparent;
+}
+
+.romento_level.l_2 {
+    opacity: 1;
+    transform: perspective(1200px) translateX(64px) rotateY(90deg);
+    z-index: 2;
+}
+
+.romento_gradient {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+
+    height: 514px;
+    background: linear-gradient(transparent 0%,
+            transparent 20%,
+            var(--elevation_16) 70%,
+            var(--elevation_16) 100%);
+}
+
+.romento_level.l_3 {
+    opacity: 1;
+    transform: perspective(1200px) translateX(96px) rotateY(90deg);
+    z-index: 3;
+}
+
+.romento_svg_cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 80px;
+    width: 39px;
+
+    transform: translate(-50%, -50%);
+}
+
+.romento_text_cont {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 17%;
+
+    padding: 0 16px;
+    text-align: center;
+}
+
+.romento_text {
+    color: var(--elevation_2);
+    font-family: var(--font_lora);
+    font-size: 18px;
+    line-height: 170%;
+}
+
+.romento_home_bar {
+    background-color: var(--elevation_2);
+}

@@ -1,0 +1,341 @@
+.laptopWrapper {
+    opacity: 1;
+}
+
+.laptop_level.l_0 {
+    position: absolute;
+    top: 21.7%;
+    left: 1px;
+    bottom: 21.7%;
+    right: 0;
+
+    border-radius: 20px;
+
+    transform: perspective(1200px) translateY(0) rotateX(-90deg) rotateZ(0deg);
+    z-index: 0;
+}
+
+.laptop_top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: inherit;
+
+    background-color: var(--elevation_12);
+}
+
+.laptop_bottom_cont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: inherit;
+
+    opacity: 0;
+    transform: perspective(1200px);
+
+    overflow: visible;
+    z-index: 0;
+}
+
+.laptop_bottom_wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.laptop_bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: inherit;
+    background-color: var(--elevation_5);
+
+    transform: perspective(1200px) translateY(38%) scale(1.15) rotateX(-95deg);
+    overflow: visible;
+    z-index: 0;
+}
+
+.laptop_2_bottom {
+    transform: perspective(1200px) translateY(0px) scale(1) rotateX(-105deg);
+    transform-origin: bottom;
+}
+
+:root {
+    --keyboard-content-width: 545px;
+    --keyboard-content-height: 120%;
+
+    --keyboard-trackpad-width: 204px;
+    --keyboard-trackpad-height: 114px;
+
+    --keyboard-connector-height: 76px;
+}
+
+.laptop_keyboard_cont {
+    position: absolute;
+    top: 0px;
+
+    height: var(--keyboard-content-height);
+    width: 100%;
+
+    overflow: visible;
+}
+
+.trackpad {
+    position: absolute;
+    top: 18px;
+    left: 35%;
+
+    height: 26%;
+    width: 30.15%;
+    border-radius: 10px;
+    background-color: var(--elevation_6);
+
+    overflow: hidden;
+    will-change: transform;
+}
+
+.connector {
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    left: 0;
+
+    height: 17.5%;
+    background-color: var(--elevation_12);
+
+    transform: perspective(1200px) rotateX(0deg) translateZ(-38px) scale(0.92);
+
+    overflow: hidden;
+}
+
+.keys {
+    position: absolute;
+    bottom: 20%;
+    left: 7.25%;
+
+    height: 47%;
+    /* height: 47%; */
+    width: 85.5%;
+    border-radius: 14px;
+    background-color: var(--elevation_13);
+
+    overflow: hidden;
+    will-change: transform;
+}
+
+.keys_row_0,
+.keys_row_1,
+.keys_row_2,
+.keys_row_3 {
+    position: absolute;
+    left: 50%;
+
+    height: 20%;
+    /* height: 39px; */
+    width: 100%;
+    /* width: min-content; */
+    padding: 0px;
+
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-flow: row nowrap;
+    gap: 4px;
+
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.keys_row_0 {
+    bottom: 4.5%;
+    /* bottom: 12px; */
+}
+
+.keys_row_1 {
+    bottom: 28%;
+    /* bottom: 61px; */
+}
+
+.keys_row_2 {
+    top: 28%;
+    /* top: 61px; */
+}
+
+.keys_row_3 {
+    top: 4.5%;
+    /* top: 13px; */
+}
+
+.key {
+    height: 100%;
+    /* height: 39px; */
+    border-radius: 6px;
+
+    --border-bottom-width: 3px;
+    --border-color: var(--elevation_12, #293a3d);
+    --border-left-width: 1px;
+    --border-right-width: 1px;
+    --border-style: solid;
+    --border-top-width: 3px;
+
+    flex: 0 0 auto;
+
+    background-color: var(--elevation_12, #293a3d);
+
+    overflow: hidden;
+    position: relative;
+    will-change: transform;
+}
+
+.key::after {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+    border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0);
+    border-color: var(--border-color, transparent);
+    border-style: var(--border-style, none);
+
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.single_key {
+    width: 7.5%;
+    /* width: 37px; */
+}
+
+.double_key {
+    width: 15.5%;
+    /* width: 77px; */
+}
+
+.space_bar {
+    width: 48%;
+    /* width: 239px; */
+}
+
+.laptop_level.l_1,
+.laptop_level.l_2,
+.laptop_level.l_3 {
+    position: absolute;
+    top: 23%;
+    left: 8px;
+
+    height: 54%;
+    width: calc(100% - 16px);
+    border-radius: 12px;
+
+    overflow: hidden;
+    will-change: transform;
+}
+
+.laptop_level.l_1 {
+    background-color: rgba(255, 255, 255);
+    transform: perspective(1200px) translateX(0px) translateY(32px) rotateX(-90deg) rotateZ(0deg);
+}
+
+.laptop_1_video_cont {
+    position: absolute;
+    top: calc(50% - 179px);
+    left: calc(49.9121% - 288.5px);
+
+    height: 358px;
+    width: 577px;
+}
+
+.laptop_1_video {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+
+    background-color: transparent;
+
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.laptop_level.l_2 {
+    transform: perspective(1200px) translateX(0px) translateY(64px) rotateX(-90deg) rotateZ(0deg);
+}
+
+.laptop_1_gradient {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    bottom: -5px;
+    left: 0px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.016) 8.62099%,
+            rgba(0, 0, 0, 0.05) 16.5598%,
+            rgba(0, 0, 0, 0.114) 23.93%,
+            rgba(0, 0, 0, 0.19) 30.8455%,
+            rgba(0, 0, 0, 0.28) 37.4198%,
+            rgba(0, 0, 0, 0.373) 43.7668%,
+            rgba(0, 0, 0, 0.475) 50%,
+            rgba(0, 0, 0, 0.576) 56.2332%,
+            rgba(0, 0, 0, 0.675) 62.5802%,
+            rgba(0, 0, 0, 0.76) 69.1545%,
+            rgba(0, 0, 0, 0.84) 76.07%,
+            rgba(0, 0, 0, 0.898) 83.4402%,
+            rgba(0, 0, 0, 0.937) 91.379%,
+            rgba(0, 0, 0, 0.95) 100%);
+    overflow: hidden;
+}
+
+.laptop_level.l_3 {
+    transform: perspective(1200px) translateX(0px) translateY(96px) rotateX(-90deg) rotateZ(0deg);
+}
+
+.laptop_1_image_cont {
+    position: absolute;
+    top: -3px;
+    right: -1px;
+    left: 0px;
+
+    height: 357px;
+
+    overflow: hidden;
+}
+
+.laptop_2_image_cont {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: -10px;
+    left: 0px;
+
+    overflow: hidden;
+}
+
+.laptop_image {
+    height: 100%;
+    width: 100%;
+
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
+    image-rendering: auto;
+    user-select: none;
+    pointer-events: none;
+}

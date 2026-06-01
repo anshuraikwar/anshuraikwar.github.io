@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #B3A0A7;
+  --foreground: #1E1E1E;
+
+  --h-padding: 16px;
+  --section-y-margin: 56px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-europa-grotesk);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* TODO */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #B3A0A7;
+    --foreground: #1E1E1E;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-europa-grotesk), Arial, Helvetica, sans-serif;
+}
+
+.navbar,
+.container {
+  max-width: 1512px;
+  margin: 0 auto;
+}
+
+.container {
+  gap: var(--section-y-margin);
+}
+
+.navbar,
+.hero-section,
+.tech-stack-section,
+.experience-section,
+.projects-section .heading,
+.end-section {
+  padding-left: var(--h-padding);
+  padding-right: var(--h-padding);
+}
+
+.tech-stack-section,
+.end-section {
+  padding-top: var(--section-y-margin);
+}
+
+.tech-stack-section,
+.experience-section,
+.projects-section {
+  margin-top: var(--section-y-margin);
+  margin-bottom: var(--section-y-margin);
+}
+
+.tech-stack {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  row-gap: 16px;
+  column-gap: 24px;
+}
+
+.project-sub-section {
+  height: 100vw;
+}
+
+.end-section .subtext {
+  max-width: 250px;
+}
+
+/* 
+sm: 40rem (640px)
+md: 48rem (768px)
+lg: 64rem (1024px)
+xl: 80rem (1280px)
+2xl: 96rem (1536px)
+*/
+
+
+@media (min-width: 640px) {
+  :root {
+    --h-padding: 16px;
+    --section-y-margin: 80px;
+  }
+
+  .tech-stack {
+    padding-left: 56px;
+    padding-right: 56px;
+
+    row-gap: 24px;
+    column-gap: 32px;
+  }
+
+  .end-section .subtext {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-stack {
+    padding-left: min(13vw, 200px);
+    padding-right: min(13vw, 200px);
+
+    row-gap: 24px;
+    column-gap: 48px;
+  }
+
+  .project-sub-section {
+    height: max(675px, min(75vh, 754px));
+  }
+
+  .end-section .subtext {
+    max-width: min(50vw, 400px);
+  }
+}
