@@ -12,7 +12,7 @@ export default function Projects() {
   const details = (index: number, details: { bgColor?: string; title: string; description: React.ReactNode; techStack: typeof techStack[keyof typeof techStack][]; github: string; link: string }) => (
     <div className={`project-details-card font-mono ${index % 2 === 0 ? 'lg:right-0' : 'lg:left-0'}`}>
       <div
-        className="sm:h-full w-full rounded-lg lg:rounded-[48px] p-4 lg:p-14 flex flex-col gap-4 lg:justify-between items-start"
+        className="lg:h-full w-full rounded-lg lg:rounded-[48px] p-4 lg:p-14 flex flex-col gap-4 lg:justify-between items-start"
         style={{
           backdropFilter: "blur(24px)",
           backgroundColor: details.bgColor,
@@ -58,8 +58,8 @@ export default function Projects() {
   );
 
   return (
-    <section className="projects-section flex flex-col items-center gap-3">
-      <SectionHeading mainText="Projects" outerClassName="heading ms-auto h-[1em]" />
+    <section className="projects-section flex flex-col items-center gap-3 md:gap-12">
+      <SectionHeading mainText="Projects" outerClassName="heading ms-auto" />
 
       <div className="w-full flex flex-col">
         <div className="project-sub-section bg-[#070918] flex items-center overflow-hidden relative">

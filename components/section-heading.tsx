@@ -7,7 +7,7 @@ interface SectionHeadingProps {
 
 export default function SectionHeading({
   mainText,
-  outerClassName = "ms-auto h-[1em]",
+  outerClassName = "ms-auto",
   secondaryContent,
   secondaryClassName = "text-sm flex align-center justify-end absolute w-full -bottom-[1.6em]",
 }: SectionHeadingProps) {
@@ -17,7 +17,7 @@ export default function SectionHeading({
 
   return (
     <div className={`${outerClassName} relative`} style={{ fontSize: "min(12vw, 180px)" }}>
-      <div className="flex align-start h-[0.66em] overflow-hidden" style={{ fontSize: "min(12vw, 180px)" }}>
+      <div className="flex align-start overflow-hidden" style={{ fontSize: "min(12vw, 180px)" }}>
         <h2 className="font-medium leading-[1em]">
           <span className="tracking-[-0.04em]">{displayText}</span>
           {lastChar}

@@ -19,8 +19,8 @@ const TECH_STACK_ITEMS = [
 
 export default function TechStack() {
   return (
-    <section className="tech-stack-section flex flex-col items-center gap-3">
-      <SectionHeading mainText="Tech Stack" outerClassName="ms-auto h-[1em]" />
+    <section className="tech-stack-section flex flex-col items-center gap-3 md:gap-12">
+      <SectionHeading mainText="Tech Stack" outerClassName="ms-auto" />
       <div className="tech-stack flex flex-wrap justify-center">
         {TECH_STACK_ITEMS.map((tech) => (
           <div key={tech.label} className="flex items-center gap-1 lg:gap-3">

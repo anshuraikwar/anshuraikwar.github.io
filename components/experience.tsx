@@ -4,8 +4,8 @@ import SectionHeading from "@/components/section-heading";
 
 export default function Experience() {
   return (
-    <section className="experience-section flex flex-col items-center gap-3">
-      <SectionHeading mainText="Experience" outerClassName="me-auto h-[1em]" />
+    <section className="experience-section flex flex-col items-center gap-3 md:gap-12">
+      <SectionHeading mainText="Experience" outerClassName="me-auto" />
       <div className="w-full flex flex-col gap-y-12">
         {Object.keys(EXPERIENCE_DATA).map((company) => (
           <div key={company} className="flex flex-col">
