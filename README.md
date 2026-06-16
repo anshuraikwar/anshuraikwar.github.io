@@ -68,26 +68,32 @@ The portfolio highlights the following projects:
 2. **Experiment With 3D Transitions**
    - Recreation of an advanced scroll-transform website with 3D transitions.
    - Built with React.
-   - Demo: https://anshuraikwar.github.io/scroll-transform-exploration/
+   - Demo: https://anshuraikwar.github.io/scroll-transform-exploration
    - GitHub: https://github.com/anshuraikwar/scroll-transform-exploration
 
 3. **Globetrotter**
    - 2D animations and parallax scrolling web experience.
    - Built with React.
-   - Demo: https://anshuraikwar.github.io/Globetrotter/
+   - Demo: https://anshuraikwar.github.io/Globetrotter
    - GitHub: https://github.com/anshuraikwar/Globetrotter
 
 4. **Samphora**
    - Accessible web app with hover and page transitions.
    - Built with React.
-   - Demo: https://anshuraikwar.github.io/samphora/
+   - Demo: https://anshuraikwar.github.io/samphora
    - GitHub: https://github.com/anshuraikwar/samphora
 
 5. **Rollout**
    - Rollout animation demo using plain HTML and CSS.
    - Built with React.
-   - Demo: https://anshuraikwar.github.io/Rollout/
+   - Demo: https://anshuraikwar.github.io/Rollout
    - GitHub: https://github.com/anshuraikwar/rollout
+
+5. **BookLore**
+   - Interactive bookshelf interface with a realistic 3D book animation.
+   - Built with Next JS.
+   - Demo: https://anshuraikwar.github.io/BookLore
+   - GitHub: https://github.com/anshuraikwar/BookLore
 
 ## Development
 
