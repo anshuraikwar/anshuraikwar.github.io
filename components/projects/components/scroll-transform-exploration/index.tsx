@@ -60,7 +60,7 @@ export default function ScrollTransformExploration() {
   }, []);
 
   return (
-    <div className="scroll_transform_exploration w-full h-[75vw] lg:h-full flex items-center justify-center lg:justify-end relative z-10" id="scroll_transform_exploration">
+    <div className="scroll_transform_exploration w-full h-full flex items-center justify-center lg:justify-end relative z-10" id="scroll_transform_exploration">
       <AnimationContainer />
       <MainContent />
     </div>

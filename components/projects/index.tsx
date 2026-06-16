@@ -7,6 +7,7 @@ import Rollout from "./components/rollout";
 import ScrollTransformExploration from "./components/scroll-transform-exploration";
 import SectionHeading from "@/components/section-heading";
 import Link from "next/link";
+import BookLore from "./components/booklore";
 
 export default function Projects() {
   const details = (index: number, details: { bgColor?: string; title: string; description: React.ReactNode; techStack: typeof techStack[keyof typeof techStack][]; github: string; link: string }) => (
@@ -159,7 +160,6 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* <div className="project-sub-section flex items-center relative"> */}
         <div className="project-sub-section flex items-center overflow-hidden relative">
           {details(4, {
             bgColor: "rgba(0,0,0,0.4)",
@@ -181,6 +181,29 @@ export default function Projects() {
 
           <div className="hidden md:flex h-full w-full">
             <Rollout />
+          </div>
+        </div>
+
+        <div className="project-sub-section flex flex-col lg:flex-row justify-end items-center overflow-hidden relative">
+          <div
+            className="absolute left-0 top-10 bottom-0 w-[45%] hidden lg:block"
+            style={{
+              backgroundImage: 'url("/assets/booklore/booklore.webp")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'right',
+            }}
+          />
+          {details(1, {
+            bgColor: "rgba(0,0,0,0.2)",
+            title: "BOOKLORE",
+            description: 'BookLore is an immersive digital bookshelf built with Next.js, React, and TypeScript. Features a realistic 3D book animation that rotates and gradually opens to reveal its pages, creating an experience inspired by physical books.',
+            techStack: [techStack.nextjs, techStack.typescript, techStack.css],
+            github: "https://github.com/anshuraikwar/BookLore",
+            link: "https://anshuraikwar.github.io/BookLore/",
+          })}
+
+          <div className="flex h-full w-full lg:w-[60%] pe-10 sm:pe-40 lg:pe-0 ms-auto">
+            <BookLore />
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@
     --elevation_1: rgb(255, 255, 255);
 }
 
-scroll-transform-exploration {
+.scroll-transform-exploration {
     margin: 0;
     
     -webkit-font-smoothing: antialiased;

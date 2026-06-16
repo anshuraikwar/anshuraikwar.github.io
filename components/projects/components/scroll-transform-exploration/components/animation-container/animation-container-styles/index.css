@@ -11,7 +11,7 @@
 
 @media (min-width: 640px) {
     :root {
-        --animated-container-height: 95vw;
+        --animated-container-height: 75vw;
         --animated-container-width: calc(var(--animated-container-height) * 0.9);
     }
 }

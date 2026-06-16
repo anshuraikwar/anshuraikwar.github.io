@@ -45,6 +45,7 @@ body {
 .experience-section,
 .projects-section .heading,
 .end-section {
+  width: 100%;
   padding-left: var(--h-padding);
   padding-right: var(--h-padding);
 }
@@ -70,7 +71,7 @@ body {
 }
 
 .project-sub-section {
-  height: 100vw;
+  height: min(600px, max(100vw, 75vh));
 }
 
 .end-section .subtext {
